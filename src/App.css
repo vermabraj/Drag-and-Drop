@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  margin: auto;
+}
+#dragDrop_component {
+  width: 400px;
+  text-align: start;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropzone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border: 4px dashed silver;
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.drag-btn {
+  margin-top: 10px;
+  background-color: orange;
+  border: 1px solid silver;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  font-weight: bold;
+}
+.listItem {
+  width: max-content;
+  margin: auto;
+}
+.listItem > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid silver;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.listItem > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  width: 170px;
+}
+
+.listItem button {
+  border: none;
+  padding: 5px 10px 5px 10px;
+  font-size: small;
+  font-weight: bold;
+}
+.listItem > div > div :nth-child(1) {
+  background-color: rgb(15, 172, 15);
+  border-radius: 10px;
+}
+.listItem > div > div :nth-child(2) {
+  background-color: rgb(219, 61, 61);
+  border-radius: 10px;
+}
